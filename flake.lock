@@ -1,0 +1,121 @@
+{
+  "nodes": {
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1696426674,
+        "narHash": "sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "0f9255e01c2351cc7d116c072cb317785dd33b33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1694529238,
+        "narHash": "sha256-zsNZZGTGnMOf9YpHKJqMSsa0dXbfmxeoJ7xHlrt+xmY=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "ff7b65b44d01cf9ba6a71320833626af21126384",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "luarocks-nix": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "rock-candy",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1697702504,
+        "narHash": "sha256-dqFFYehBgK0RqH0/1GtZXq7XLGCcc3Kfadq8ICYNCWk=",
+        "owner": "nix-community",
+        "repo": "luarocks-nix",
+        "rev": "4240b25b95d7165cde66fc2acaf5a0f9ad40fd0c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "luarocks-nix",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1707451808,
+        "narHash": "sha256-UwDBUNHNRsYKFJzyTMVMTF5qS4xeJlWoeyJf+6vvamU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "442d407992384ed9c0e6d352de75b69079904e4e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "rock-candy": {
+      "inputs": {
+        "luarocks-nix": "luarocks-nix",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1707634413,
+        "narHash": "sha256-J3qre7IsGdzlgDRojntg7UUBwV5qfHs6eGCfNdaK0OU=",
+        "owner": "vivlim",
+        "repo": "rock-candy",
+        "rev": "63ddeb2b10ee6ab44a6f9a376f6836db8e39c5bb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vivlim",
+        "repo": "rock-candy",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "rock-candy": "rock-candy"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
